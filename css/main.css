@@ -1,0 +1,378 @@
+body{
+    font-family: Helvetica, sans-serif;
+    padding:0;
+    background-color: #b1b1b1;
+   
+}
+
+/* Global */
+.container{
+
+    margin: auto;
+    overflow: hidden;
+
+}
+header ul{
+    margin: 0;
+    padding: 0;
+
+}
+/* Header */
+header{
+    min-width:1300px;
+    background: #03254c;
+    color: #ffffff;
+    padding-top: 1px;
+    min-height: 15px;
+    border-bottom: 1px #1166b1 solid ;
+    
+}
+
+header a{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+    border-left: #ffffff solid;
+}
+
+header #title{
+    margin-left:10px;
+    float: left;
+   
+    
+}
+
+
+header #title h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 25px;
+
+}
+
+header .highlights{
+    
+    color: #2a9df4;
+    font-weight: bold;
+}
+
+header .current a{
+    text-decoration: none;
+    color: #ff4949;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+
+
+/* accnt  panel */
+.navbox{
+    float: left;
+    overflow: hidden;
+    max-width: 22%;
+    min-width: 297px;
+    height: 550px;
+    background-color: aliceblue;
+    border-right: 1px #7887966c solid;
+    box-shadow: 5px 5px 20px #444343;
+}
+.sidepanel{
+    overflow: hidden;
+    width: 250px;
+    height: 160px;
+    background: linear-gradient(#1167b1,aliceblue);
+    border-bottom: 1px solid #CFD8DC;
+}
+.emailacc{
+
+    padding-top: 108px;
+    padding-left: 10px;
+    
+}
+.emailacc .email-user{
+    font-size: 0.9em;
+    color: #222522;
+    
+}
+
+
+
+/****************************Function */
+
+.multi-level, .item ul, .navpanel input[type="checkbox"] {
+    display: none;
+    transition: 0.1s;
+}
+.multi-level, .item input:checked ~ ul {
+    display: block;
+    transition: 0.1s;
+}
+
+
+/**************************arrow animation */
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    float: right;
+    z-index: 0;
+    margin: 17px 1em 0 2em;
+}
+.item input + .arrow {
+    transform: rotate(-90deg);
+    transition: 0.1s;
+}
+.item input:checked + .arrow {
+    transform: rotate(0deg);
+    transition: 0.1s;
+}
+
+/* email panel */
+.photo{
+    float: left;
+
+}
+.accphoto{
+    width: 50px;
+    height: 50px;
+    padding-left: 8px;
+    padding-top: 5px;
+    
+}
+
+/********************dropdown for change pass etc.. */
+.dropdownnav .emaildropdown{
+    background: linear-gradient(#e8eaec11,#f4f5f536);
+}
+.dropdownnav .emaildropdown:hover{
+    background: linear-gradient(#ecedee41,#f8fbfc81);
+}
+
+.dropdownnav ul li{
+    margin: 0;
+    display: block;
+}
+.dropdownnav ul, .dropdownnav input[type="checkbox"]  {
+    display: none;
+}
+.dropdownnav  input:checked ~ ul {
+    display: block;
+}
+.dropdownnav label{
+    margin: 0;
+    padding: 0; 
+}
+.dropdownnav ul{
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 2px 5px #86878a;
+}
+.dropdownnav{
+    border-radius: 2px 2px 2px 2px;
+    float: left;
+    position: absolute;
+    z-index: 1;
+    margin-left: 265px;
+    margin-top: 135px; 
+}
+.dropdownnav ul li{  
+    padding: 5 5 5 5;
+    margin-top: 20px;
+    font-size: 1em;
+    margin: 0;
+    background: #dbdfe08e;
+    position: relative;    
+}
+.dropdownnav ul li a{  
+    font-weight: bold;
+    text-decoration: none;
+    color: #111010d5;   
+}
+.dropdownnav ul li a:hover { 
+    color: #879296f8;  
+}
+
+
+
+/*Navbar Styles*/
+
+label:hover {
+    cursor: pointer;
+    
+}
+.navpanel li:hover{
+    background-color: #03254c;
+}
+label {
+    width: 100%;
+    display: block;
+    z-index: 3;
+    position: relative;
+}
+.navpanel {
+    height:auto;
+    width: 100%;
+    min-width:250px;
+    background-color: aliceblue;
+    overflow-x: hidden;
+    overflow-y:hidden;
+    border-bottom: 1px solid #CFD8DC;
+}
+.navpanel ul, .navpanel li, label {
+    
+    line-height: 50px;
+    margin: 0;
+    padding: 0 2em;
+    list-style: none;
+    text-decoration: none;
+    color: #0c1c22 ;
+    font-weight: bold;
+    width: 100%;
+    
+}
+
+.item ul {
+    padding: 0 0.25em;
+   
+}
+.navpanel li a {
+   
+    line-height: 50px;
+    margin: 0;
+    padding: 0 4em;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(107, 113, 116);
+    font-weight: 100;
+}
+
+
+/* Main Panel */
+.mainpanel{
+    margin-left:324px;
+    width: 73%;
+    position:absolute;
+    height: 550px;
+    
+}
+.datapanel {
+    height: 475px;
+    width: 821px;
+    padding-top: 40px;
+    padding-left: 40px;
+    margin-left: 20px;
+    float: left;
+    font-weight: bold;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.400);
+    border-radius: 5px 5px 5px 5px;
+}
+
+.datapanel h3{
+    font-size:1.3em;
+    font-weight:400;
+    color: rgba(0,0,0,.9);
+    margin: 0;
+}
+.datapanel th{
+    background:#b5c0cce7;
+}
+.fullname{
+    margin: -37px 1em 0 2em;
+    color: #191f25;
+    
+}
+.statuspanel{
+    position:relative;
+    width: 84%;
+    height: 35px;
+    margin-left: 20px;
+}
+.datapanel td{
+    color: rgb(119, 136, 145);
+    font-weight: normal;
+    
+}
+.table-stripped{
+    border:1 horizontal;
+}
+.btn-update{
+border-radius: 3px 3px 3px 3px;
+font-family: georgia;
+color: #ffffff;
+font-size: 16px;
+text-decoration: none;
+border:none;
+}
+.btn-update:hover{
+    opacity:0.7;
+    text-decoration: none;
+}
+.btn-delete{
+border-radius: 3px 3px 3px 3px;
+font-family: Georgia;
+color: #ffffff;
+font-size: 16px;
+background: #ff4949;
+padding: 1px 5px 2px 5px;
+text-decoration: none;
+border:none;
+cursor: pointer;
+}
+.btn-delete:hover{
+    background: #ff4949b7;
+    text-decoration: none;
+
+}
+
+.table-stripped{
+    border-collapse: collapse; 
+    margin: 10px 0;
+    font-size: 0.9em;
+    min-width: 800px;
+    max-width: 800px;
+    border-radius: 5px 5px 0 0;
+    overflow:hidden;
+    text-align: left;
+}
+
+.table-stripped th{
+    background:#b5c0cce7;
+    font-size: 1em;
+}
+.table-stripped tbody td{
+    border-bottom: 1px solid #dedfdf;
+   
+}
+.emailphoto{
+    width: 298px;
+    height: 159px;
+    position:absolute;
+    box-shadow: 0 5px 15px #5a5c5f;
+    
+}
+.accphoto{
+    position:relative;
+}
+.emailacc{
+    position:relative;
+}
+
+
+
+
+
+
